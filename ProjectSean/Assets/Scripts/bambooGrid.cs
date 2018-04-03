@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bambooGrid : MonoBehaviour {
 
-	public isBamboo[] isBamboo;
+	public IsBamboo[] dooBaDee;
 
 	int[,] bamboo;
     [SerializeField]
@@ -21,6 +21,16 @@ public class bambooGrid : MonoBehaviour {
 
 			}
         }
+
+		bamboo[1, 2]=1;
+		bamboo[2,3]=1;
+		bamboo[3,4]=1;
+		bamboo[4,5]=1;
+		bamboo[5,6]=1;
+		bamboo[6,7]=1;
+		bamboo[7,8]=1;
+
+		generateMap();
 	}
     void generateMap()
 	{
@@ -28,7 +38,7 @@ public class bambooGrid : MonoBehaviour {
 		{
 			for (int Y = 0; Y <= gridSizeY; Y++)
 			{
-				isBamboo tt = isBamboo[bamboo[X, Y]];
+				IsBamboo tt = dooBaDee[bamboo[X, Y]];
 
 				Instantiate(tt.bambooVisualPrefab, new Vector3(X, Y, 0), Quaternion.identity);
 

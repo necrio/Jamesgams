@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class isBamboo {
+public class IsBamboo {
 	
 	public string name;
 	public GameObject bambooVisualPrefab;
