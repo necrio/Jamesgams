@@ -28,6 +28,9 @@ public class bambooGrid : MonoBehaviour {
 		{
 			for (int Y = 0; Y <= gridSizeY; Y++)
 			{
+				isBamboo tt = isBamboo[bamboo[X, Y]];
+
+				Instantiate(tt.bambooVisualPrefab, new Vector3(X, Y, 0), Quaternion.identity);
 
 			}
 		}
