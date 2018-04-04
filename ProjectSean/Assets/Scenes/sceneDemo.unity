@@ -233,9 +233,33 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114119101727643454, guid: 88a52fff4e2754942a73ed5952e59fa1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 88a52fff4e2754942a73ed5952e59fa1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1113617176 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1735281934484326, guid: 88a52fff4e2754942a73ed5952e59fa1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113617175}
+--- !u!114 &1113617177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113617176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06df5c76f46511479f837e6c7e5356f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileTypes:
+  - Name: bamboo
+    tilePrefab: {fileID: 1640547861769300, guid: d4b9ee41c77886a47883b11c45ae014b,
+      type: 2}
+  - Name: air
+    tilePrefab: {fileID: 1371259025821576, guid: e634e33501e0344409a63c6f1a3555c8,
+      type: 2}
 --- !u!1 &1627566310
 GameObject:
   m_ObjectHideFlags: 0
