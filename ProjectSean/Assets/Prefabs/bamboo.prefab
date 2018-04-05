@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33014113700838092}
   - component: {fileID: 135186482898396930}
   - component: {fileID: 23348283175604042}
+  - component: {fileID: 114195796648227348}
   m_Layer: 0
   m_Name: bamboo
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640547861769300}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114195796648227348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640547861769300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 055d6d99a06e38f47a14177b224b33ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileX: 0
+  tileZ: 0
+  map: {fileID: 0}
 --- !u!135 &135186482898396930
 SphereCollider:
   m_ObjectHideFlags: 1

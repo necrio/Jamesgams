@@ -10,7 +10,7 @@ public class DudeMoveTo : MonoBehaviour {
 	private void OnMouseUp()
 	{
 		Debug.Log("clicked");
-		map.MoveDudeTo(tileX, tileZ);
+		map.DudeJump(tileX, tileZ);
 
 	}
 }

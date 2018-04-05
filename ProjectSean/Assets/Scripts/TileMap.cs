@@ -77,10 +77,10 @@ public class TileMap : MonoBehaviour
             {
                 TileType tt = tileTypes[tiles[x, z]];
                 GameObject go =(GameObject)Instantiate(tt.tilePrefab, new Vector3(gridPosition.x+x, bambooHeight, gridPosition.z+z), Quaternion.identity);
-				//DudeMoveTo ct = go.GetComponent<DudeMoveTo>();
-				//ct.tileX = x;
-				//ct.tileZ = z;
-				//ct.map = this;
+				DudeMoveTo ct = go.GetComponent<DudeMoveTo>();
+				ct.tileX = x;
+				ct.tileZ = z;
+				ct.map = this;
 
             }
 
@@ -88,9 +88,9 @@ public class TileMap : MonoBehaviour
 
     }
 
-	public void MoveDudeTo(int x, int z)
+	public void DudeJump(int x, int z)
 	{
-		UnitSelect.transform.position = new Vector3(x, 0, z);
+		UnitSelect.transform.position = new Vector3(gridPosition.x + x, bambooHeight, gridPosition.z + z);
 
 	}
 
