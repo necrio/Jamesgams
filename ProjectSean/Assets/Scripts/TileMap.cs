@@ -9,9 +9,14 @@ public class TileMap : MonoBehaviour
     int[,] tiles;
     int mapSizeX = 16;
     int mapSizeZ = 7;
+	Vector3 x;
+	Vector3 z;
 
     void Start ()
-{
+	{
+		x = transform.localPosition;
+		z = transform.localPosition;
+
         tiles = new int[mapSizeX, mapSizeZ];
         for (int x=0; x < mapSizeX; x++)
         {
