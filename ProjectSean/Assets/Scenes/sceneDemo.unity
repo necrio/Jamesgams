@@ -260,6 +260,7 @@ MonoBehaviour:
   - Name: air
     tilePrefab: {fileID: 1371259025821576, guid: e634e33501e0344409a63c6f1a3555c8,
       type: 2}
+  bambooHeight: 1.94
 --- !u!1 &1627566310
 GameObject:
   m_ObjectHideFlags: 0

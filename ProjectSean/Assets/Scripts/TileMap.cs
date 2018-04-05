@@ -6,16 +6,15 @@ public class TileMap : MonoBehaviour
 {
 
     public TileType[] tileTypes;
+	public float bambooHeight;
     int[,] tiles;
     int mapSizeX = 16;
     int mapSizeZ = 7;
-	Vector3 gridPosX;
-	Vector3 gridPosZ;
+	Vector3 gridPosition;
 
     void Start ()
 	{
-		gridPosX = transform.localPosition;
-		gridPosZ = transform.localPosition;
+		gridPosition = transform.localPosition;
 
         tiles = new int[mapSizeX, mapSizeZ];
         for (int x=0; x < mapSizeX; x++)
@@ -52,7 +51,7 @@ public class TileMap : MonoBehaviour
             for (int z = 0; z < mapSizeZ; z++)
             {
                 TileType tt = tileTypes[tiles[x, z]];
-                Instantiate(tt.tilePrefab, new Vector3(gridPosX.x, 0, gridPosZ.z), Quaternion.identity);
+                Instantiate(tt.tilePrefab, new Vector3(gridPosition.x+x, bambooHeight, gridPosition.z+z), Quaternion.identity);
 
             }
 
